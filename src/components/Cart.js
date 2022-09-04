@@ -15,13 +15,13 @@ const Cart = () => {
     );
   });
   return (
-    <div className=" flex lg:mt-[10vh]">
-      <div className=" flex-2 productContainer mt-[0px] lg:mt-[15vh] w-[75vw] h-fit m-2">
+    <div className=" flex mt-[70px] lg:mt-[10vh]">
+      <div className=" flex-2 productContainer  mt-[15vh] lg:mt-[0vh] w-[75vw] h-fit m-2">
         {cart.map((prod) => {
           return (
             <div
               key={prod.id}
-              className="w-[50vw]  lg:w-[60vw] mb-3 border-b-1  py-4 px-4  flex-col  lg:flex bg-white shadow-xl rounded-[8px]"
+              className="w-[50vw] mt-[0vh] lg:mt-[0px]  lg:w-[60vw] mb-3 border-b-1  py-4 px-4  flex-col lg:flex  lg:flex-row  bg-white shadow-2xl rounded-[8px]"
             >
               <img
                 src={prod.image}
@@ -58,7 +58,7 @@ const Cart = () => {
           );
         })}
       </div>
-      <div className="flex-1 w-[24vw] bg-primary h-[100vh] inline-block mt-2">
+      <div className="flex-1 w-[32v] lg:mt-2 mt-[30vw] lg:w-[24vw] bg-primary h-[100vh] inline-block mt-2">
         <h1 className="m-4 ml-6">Subtotal ({cart.length}) items</h1>
         <span className="ml-6 font-bold text-white">Total: &#8377;{total}</span>
       </div>
