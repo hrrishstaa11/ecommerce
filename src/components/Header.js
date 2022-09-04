@@ -104,7 +104,11 @@ const Header = () => {
                     );
                   })}
                   <Link to="/cart">
-                    <button className="w-[90%] my-2 mx-3 bg-green border-green shadow-black">
+                    <button className="w-[90%] my-2 mx-3 bg-green border-green shadow-black"
+                      onClick={()=>{
+                        setDropdown(!dropdown);
+                      }}
+                    >
                       Go To Cart
                     </button>
                   </Link>
