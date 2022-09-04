@@ -46,7 +46,7 @@ const Cart = () => {
               </select>
 
               <AiFillDelete
-                className=" mt-1 ml-5 self-center"
+                className="mt-[15px] lg:mt-1 ml-[10px] lg:ml-5 self-center"
                 onClick={() => {
                   dispatch({
                     type: "REMOVE_FROM_CART",
@@ -59,7 +59,7 @@ const Cart = () => {
         })}
       </div>
       <div className="flex-1 w-[32v] lg:mt-2 mt-[30vw] lg:w-[24vw] bg-primary h-[100vh] inline-block mt-2">
-        <h1 className="m-4 ml-6">Subtotal ({cart.length}) items</h1>
+        <h1 className=" mt-[35vh] lg:mt-[10px] m-4 ml-6">Subtotal ({cart.length}) items</h1>
         <span className="ml-6 font-bold text-white">Total: &#8377;{total}</span>
       </div>
     </div>
