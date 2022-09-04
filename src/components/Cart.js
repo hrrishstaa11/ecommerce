@@ -58,9 +58,9 @@ const Cart = () => {
           );
         })}
       </div>
-      <div className="flex-1 w-[32v] lg:mt-2 mt-[30vw] lg:w-[24vw] bg-primary h-[100vh] inline-block mt-2">
-        <h1 className=" mt-[35vh] lg:mt-[10px] m-4 ml-6">Subtotal ({cart.length}) items</h1>
-        <span className="ml-6 font-bold text-white">Total: &#8377;{total}</span>
+      <div className="flex-1 w-[32v]  lg:mt-2 mt-[30vw] lg:w-[24vw] bg-primary h-[100vh] inline-block mt-2">
+        <h1 className=" text-[20px] lg:text-[30px] mt-[20vh] lg:mt-[10px] m-4 ml-6">Subtotal ({cart.length}) items</h1>
+        <span className="ml-6 text-[13px] lg:text-15  font-bold text-white">Total: &#8377;{total}</span>
       </div>
     </div>
   );
